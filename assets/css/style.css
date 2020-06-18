@@ -3,6 +3,15 @@
 }
 
 .drum-button {
-    background-color: black !important;
-    margin: 0 20px 20px 20px;
+    background-color: gray !important;
+    margin: 0 10px 20px 10px;
+    height: 50px;
+}
+
+.drum-container {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
 }
