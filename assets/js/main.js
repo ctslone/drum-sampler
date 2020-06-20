@@ -103,4 +103,11 @@ $(document).ready(function() {
     function playTom() {
         tom.play();
     }
+
+    $(document).keydown(function(event) {
+        var numValue = event.which.toString()
+        var audio = $(document).find(`[data-key='${numValue}']`)
+        console.log(audio)
+    }) 
+        
 })
